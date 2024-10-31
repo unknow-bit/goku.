@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 3 Dot Button for Admin View Access -->
+        <div class="admin-menu">
+            <button id="adminButton" class="dots">•••</button>
+            <div id="adminOptions" class="hidden">
+                <button id="adminViewButton" class="button">Admin View</button>
+            </div>
+        </div>
+
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit" class="button">Login</button>
+            <p id="loginSuccess" class="hidden success-message">✔ Log in successful</p>
+        </form>
+
+        <!-- Admin View Section -->
+        <div id="adminView" class="hidden">
+            <h2>Admin View</h2>
+            <input type="password" id="adminPassword" placeholder="Enter admin password">
+            <button id="unlockAdminButton" class="button">Unlock</button>
+            <div id="submittedData" class="hidden"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+	
